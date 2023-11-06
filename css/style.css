@@ -16,10 +16,18 @@
   /* position: relative; */
 }
 
-.hero-content {
+/* .hero-content {
   max-width: 65rem;
   margin-left: 14.4rem;
   margin-top: 7.8rem;
+} */
+
+.hero-content {
+  max-width: 65rem;
+  position: absolute;
+  left: 14.4rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .hero-content .heading-primary {
@@ -114,4 +122,25 @@
 .nav-link {
   text-decoration: none;
   color: #ffe066;
+}
+
+.btn-mobile-nav {
+  background: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  color: #ffe066;
+  width: 5.8rem;
+  height: 5.8rem;
+}
+
+.icon-mobile-nav[name='menu-outline'] {
+  display: block;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
 }
