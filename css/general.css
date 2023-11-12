@@ -1,6 +1,4 @@
 /* 
-
-
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
@@ -23,17 +21,19 @@ Paragraph default: 1.6
 RADIUS::after
 Default: 9px;
 
-
+LETTER-SPACINGS:
+-0.5px
+0.75
 --- 02 COLORS
 
-PRIMARY: #fcc419 #ffe066;
-TINTS: #fff9db;
-
-SHADES: 
-ACCENTS: 
+PRIMARY: #fcc419 ;
+TINTS: #fff9e8 #fff9db #ffe066;
+SHADES: #7e620d
+ACCENTS: #339af0 
 GREYS: 
-#333
-#555 def
+#333 dark text
+#555 default text
+#ddd light text
 
 
 --- 05 SHADOWS
@@ -50,9 +50,11 @@ Medium: 11px
   /* ----  COLORS  ---- */
   --text-main: #555;
   --text-darkest: #333;
+  --text-lightest: #ddd;
   --text-white: #fff;
   /* RADIUS */
   --radius-main: 9px;
+  /* SPACING */
 }
 
 * {
@@ -86,7 +88,8 @@ body {
 .grid {
   display: grid;
   column-gap: 6.4rem;
-  row-gap: 9.6rem;
+  row-gap: 12.8rem;
+  align-items: center;
 }
 
 .grid--2-cols {
@@ -116,12 +119,31 @@ body {
 .heading-primary {
   font-size: 6.4rem;
   line-height: 1.1;
-  margin-bottom: 3.2rem;
 }
 
-.placeholder {
-  margin-bottom: 400px;
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
 }
+
+.heading-tertuary {
+  font-size: 3.6rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+  color: #7e620d;
+}
+
+/* .placeholder {
+  margin-bottom: 400px;
+} */
 
 .hidden {
   display: none;
@@ -137,10 +159,14 @@ body {
 }
 
 .btn {
-  display: imline-block;
+  display: inline-block;
   text-decoration: none;
   border: 3px solid;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: var(--radius-main);
+}
+
+.section {
+  padding: 9.6rem 0;
 }

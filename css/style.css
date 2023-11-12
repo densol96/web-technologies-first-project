@@ -144,3 +144,124 @@
 .icon-mobile-nav[name='close-outline'] {
   display: none;
 }
+
+/* ********************************* */
+/* CHARACTERS */
+/* ********************************* */
+
+.characters-section {
+  background-color: #fff9e8;
+}
+
+/* .characters-section .heading-secondary {
+  margin-bottom: 9.6rem;
+} */
+
+.characters-section .heading-tertuary {
+  margin-bottom: 3.2rem;
+}
+
+.character-description {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.character-img-box {
+  width: 50%;
+  justify-self: center;
+}
+
+.character-img-box img {
+  width: 100%;
+  border-radius: 50%;
+  border: 0.7rem solid #339af0;
+}
+
+/* ********************************* */
+/* FAQ */
+/* ********************************* */
+.faq-section {
+  height: 100vh;
+}
+
+.faq-section .heading-secondary {
+  margin-bottom: 4.8rem;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  /* Not sure about whether I want the gap to be responsive here... */
+  /* gap: 3.2rem; */
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 2.4rem;
+  row-gap: 3.2rem;
+}
+
+.question-item {
+  box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.075);
+  padding: 3.2rem;
+}
+
+.question {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.question-number {
+  color: var(--text-lightest);
+  font-weight: 700;
+}
+
+.faq-btns {
+  background: none;
+  border: none;
+}
+
+.question-answer {
+  grid-column: 2;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+
+  display: none;
+}
+
+.active .question-answer {
+  display: block;
+}
+
+.faq-icon {
+  background-color: transparent;
+}
+
+.faq-icon[name='arrow-up-outline'] {
+  display: none;
+}
+
+.active .faq-icon[name='arrow-up-outline'] {
+  display: block;
+}
+
+.faq-icon[name='arrow-down-outline'] {
+  display: block;
+}
+
+.active .faq-icon[name='arrow-down-outline'] {
+  display: none;
+}
+
+.active.question-item {
+  border-top: 4px solid #fcc419;
+}
+
+.active .question-number {
+  color: #7e620d;
+}
