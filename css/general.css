@@ -47,11 +47,14 @@ Medium: 11px
 
 :root {
   --font-default: 'Rubik', sans-serif;
-  /* ----  COLORS  ---- */
+  /* ----  TEXT COLORS  ---- */
   --text-main: #555;
   --text-darkest: #333;
   --text-lightest: #ddd;
   --text-white: #fff;
+
+  /* BACKGROUND COLORS */
+  --background-light: #fff9e8;
   /* RADIUS */
   --radius-main: 9px;
   /* SPACING */
@@ -65,8 +68,8 @@ Medium: 11px
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* scroll-behavior: smooth;
+  overflow-x: hidden; */
 }
 
 body {
@@ -74,7 +77,7 @@ body {
   color: var(--text-main);
   line-height: 1;
   font-weight: 400;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 /* ********************************* */
 /* GENERAL REUSABLE COMPONENTS */
@@ -125,6 +128,11 @@ body {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+}
+
+.small-heading {
+  font-size: 2.4rem;
+  line-height: 1.2;
 }
 
 .heading-tertuary {
