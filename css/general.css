@@ -29,7 +29,8 @@ LETTER-SPACINGS:
 PRIMARY: #fcc419 ;
 TINTS: #fff9e8 #fff9db #ffe066;
 SHADES: #7e620d
-ACCENTS: #339af0 
+ACCENT: #339af0 
+ACCENT-TINTS: #74c0fc
 GREYS: 
 #333 dark text
 #555 default text
@@ -70,8 +71,8 @@ Medium: 11px
 
 html {
   font-size: 62.5%;
-  /* scroll-behavior: smooth;
-  overflow-x: hidden; */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -79,7 +80,7 @@ body {
   color: var(--text-main);
   line-height: 1;
   font-weight: 400;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 /* ********************************* */
 /* GENERAL REUSABLE COMPONENTS */
@@ -139,6 +140,8 @@ body {
 
 .heading-tertuary {
   font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 
 .subheading {

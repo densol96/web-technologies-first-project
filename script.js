@@ -18,6 +18,7 @@ const implementSticky = function () {
   }
 };
 document.addEventListener('scroll', implementSticky);
+
 // FAQ
 const questionsAll = document.querySelectorAll('.question-item');
 
@@ -103,4 +104,14 @@ document.addEventListener('keydown', function (e) {
   } else if (e.key === 'ArrowRight') {
     goRight();
   }
+});
+
+// EPISODES BUTTON ALERT
+const watchBtns = document.querySelectorAll('.watch-link-button');
+
+watchBtns.forEach((btn) => {
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    alert('Sorry, this is for demonstration of HTML/CSS only! :(');
+  });
 });
