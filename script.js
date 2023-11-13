@@ -6,6 +6,18 @@ mobileNavBtn.addEventListener(`click`, function (e) {
   navMenu.classList.toggle(`nav-open`);
 });
 
+// STICKY NAVIGATION
+const charactersSection = document.querySelector('.characters-section');
+const navBar = document.querySelector('.main-nav');
+
+const implementSticky = function () {
+  if (window.scrollY >= charactersSection.offsetTop) {
+    navBar.classList.add('sticky');
+  } else {
+    navBar.classList.remove('sticky');
+  }
+};
+document.addEventListener('scroll', implementSticky);
 // FAQ
 const questionsAll = document.querySelectorAll('.question-item');
 
