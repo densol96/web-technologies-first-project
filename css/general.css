@@ -70,7 +70,13 @@ Medium: 11px
 }
 
 html {
-  font-size: 62.5%;
+  /* 
+    It was meant to be 62.5% initially since that would be 10px by default (62.5* 16), 
+    but I didn't realise I had zoom in 90% in my browser all this time...
+    So had to scale font-size down so everything looks the way it was meant to be imlemented...
+    Just in case you wonder why 54.5% cause I guess most people start off 62.5% xD
+    */
+  font-size: 54.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
