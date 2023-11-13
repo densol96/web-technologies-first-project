@@ -21,3 +21,74 @@ questionsAll.forEach((item) => {
     currentTab.classList.toggle('active');
   });
 });
+
+// SLIDER - CAROUSEL
+const btnLeft = document.querySelector('.author-btn-left');
+const btnRight = document.querySelector('.author-btn-right');
+const dots = document.querySelectorAll('.dot');
+const slides = document.querySelectorAll('.slide');
+
+let currentSlide = 0;
+
+const setUpSlides = function () {
+  slides.forEach((slide, i) => {
+    slide.style.transform = `translateX(${i * 150}%)`;
+  });
+  slides[currentSlide].classList.add('active');
+};
+
+const goTo = function (curSlide) {
+  slides.forEach((slide, i) => {
+    slide.style.transform = `translateX(${(i - curSlide) * 150}%)`;
+  });
+};
+
+const markDot = function (curSlide) {
+  document.querySelector('.dot-active')?.classList?.remove('dot-active');
+  document
+    .querySelector(`.dot[data-slide="${curSlide + 1}"]`)
+    .classList.add('dot-active');
+};
+
+const goLeft = function () {
+  if (currentSlide > 0) {
+    currentSlide--;
+  } else {
+    currentSlide = 2;
+  }
+  goTo(currentSlide);
+  markDot(currentSlide);
+};
+
+const goRight = function () {
+  if (currentSlide < 2) {
+    currentSlide++;
+  } else {
+    currentSlide = 0;
+  }
+  goTo(currentSlide);
+  markDot(currentSlide);
+};
+
+setUpSlides();
+btnLeft.addEventListener('click', goLeft);
+btnRight.addEventListener('click', goRight);
+
+dots.forEach((dot) => {
+  dot.addEventListener('click', function (e) {
+    const eBtn = e.target.closest('button');
+    if (!eBtn) return;
+    const numDot = +eBtn.getAttribute('data-slide');
+    currentSlide = numDot - 1;
+    goTo(currentSlide);
+    markDot(currentSlide);
+  });
+});
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'ArrowLeft') {
+    goLeft();
+  } else if (e.key === 'ArrowRight') {
+    goRight();
+  }
+});
