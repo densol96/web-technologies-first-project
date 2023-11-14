@@ -181,7 +181,7 @@
 }
 
 .character-img-box {
-  width: 50%;
+  width: 70%;
   justify-self: center;
 }
 
@@ -280,6 +280,10 @@
 /* AUTHORS / CREATORS SECTION  */
 .authors-section {
   background-color: var(--background-light);
+}
+
+.authors-section .heading-secondary {
+  margin-bottom: 6.4rem;
 }
 
 .overflow-border {

@@ -2,6 +2,29 @@
   html {
     font-size: 50%;
   }
+
+  .episodes-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 9.6rem;
+    align-items: center;
+    max-width: 120rem;
+  }
+
+  .best-episodes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .watch-now {
+    text-align: center;
+  }
+
+  .watch-now .heading-tertuary {
+    margin-bottom: 4.8rem;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -20,6 +43,10 @@
   .hero-description {
     max-width: 45rem;
   }
+
+  .section {
+    padding: 8rem 0;
+  }
 }
 
 @media (max-width: 910px) {
@@ -29,6 +56,10 @@
 
   .hero-content {
     left: 3.2rem;
+  }
+
+  .carousel {
+    width: 100%;
   }
 }
 
@@ -96,5 +127,112 @@
 
   .nav-open .icon-mobile-nav[name='close-outline'] {
     display: block;
+  }
+
+  .slide {
+    padding: 0 4.8rem 0 9.6rem;
+  }
+}
+
+@media (max-width: 785px) {
+  .faq-section {
+    height: auto;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  /* CAROUSEL */
+  .character-img-box {
+    width: 80%;
+  }
+
+  .overflow-border {
+    max-width: 70rem;
+    height: 75rem;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 90%;
+    padding: 3.2rem 0;
+  }
+
+  .slide {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0 4.8rem 0 4.8rem;
+    row-gap: 0;
+    align-items: end;
+    height: auto;
+    gap: 3.6rem;
+    text-align: center;
+  }
+
+  .author-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    height: auto;
+  }
+
+  .author-img {
+    transform: scale(1);
+    height: 35rem;
+    width: 35rem;
+  }
+
+  .author-text {
+    padding: 0;
+  }
+
+  .dots {
+    top: 105%;
+  }
+
+  /* CARDS */
+
+  .episodes-cards {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .episode-card:last-child {
+    grid-column: 1 / span 2;
+    align-self: 100%;
+    width: 45%;
+  }
+
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: auto 1fr 1fr;
+    row-gap: 6.4rem;
+    justify-items: center;
+  }
+
+  .logo-col {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+  }
+
+  .footer-grid div {
+    text-align: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .overflow-border {
+    height: 85rem;
   }
 }
