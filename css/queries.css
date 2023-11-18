@@ -334,8 +334,14 @@
   .slide {
     padding: 0 3.2rem;
   }
+
   .episodes-container {
     padding: 0 0;
+  }
+
+  .episodes-container .heading-tertuary {
+    padding: 0 3.2rem;
+    text-align: center;
   }
 
   table {
