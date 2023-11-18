@@ -327,6 +327,23 @@
 }
 
 @media (max-width: 500px) {
+  table {
+    max-width: 45rem;
+    font-size: 2.4rem;
+  }
+
+  .second th:first-child {
+    font-size: 3rem;
+  }
+
+  .price {
+    font-size: 4rem;
+  }
+
+  .subscribe-text {
+    font-size: 2rem;
+  }
+
   .hero-content {
     width: 45rem;
   }
