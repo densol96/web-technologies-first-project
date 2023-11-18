@@ -115,3 +115,13 @@ watchBtns.forEach((btn) => {
     alert('Sorry, this is for demonstration of HTML/CSS only! :(');
   });
 });
+
+// Little adjusting to size of the primary heading, because after testing on other devices, hero-heading overlaps the logo
+// const heroHeading = document.querySelector('.hero-content .heading-primary');
+// if (window.innerHeight < 800) {
+//   heroHeading.style.fontSize = '6.2rem';
+// }
+// if (window.innerHeight < 600) {
+//   heroHeading.style.fontSize = '5.2rem';
+// }
+// console.log(window.innerHeight);

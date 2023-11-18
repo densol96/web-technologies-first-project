@@ -61,6 +61,19 @@
   .carousel {
     width: 100%;
   }
+
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .hero-description {
+    font-size: 2rem;
+  }
+
+  .hero .btn {
+    font-size: 2rem;
+    padding: 0.8rem 1.6rem;
+  }
 }
 
 @media (max-width: 865px) {
