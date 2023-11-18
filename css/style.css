@@ -4,7 +4,6 @@
 
 .hero {
   height: 100vh;
-  /* padding: 0 4.8rem; */
   background-image: linear-gradient(
       to bottom,
       rgba(12, 12, 12, 0.8),
@@ -13,14 +12,8 @@
     url(../img/hero-img.png);
   background-size: cover;
   background-position: center;
-  /* position: relative; */
+  position: relative;
 }
-
-/* .hero-content {
-  max-width: 65rem;
-  margin-left: 14.4rem;
-  margin-top: 7.8rem;
-} */
 
 .hero-content {
   max-width: 65rem;
@@ -31,7 +24,6 @@
 }
 
 .hero-content .heading-primary {
-  /* color: var(--text-white); */
   color: #ffe066;
   margin-bottom: 8rem;
 }
@@ -39,7 +31,6 @@
 .hero-description {
   font-size: 2.4rem;
   line-height: 2;
-  /* color: var(--text-white); */
   color: #fff9db;
   margin-bottom: 6.4rem;
 }
@@ -51,21 +42,13 @@
 
 .hero .btn {
   font-size: 2.4rem;
-  /* color: var(--text-white); */
   color: #fcc419;
 }
-
-/* .--btn-full {
-  background-color: #97760f;
-  font-weight: 600;
-  color: white !important;
-} */
 
 .hero-btn {
   display: inline-flex;
   align-items: center;
   gap: 1.2rem;
-
   transition: transform 350ms, box-shadow 100ms;
 }
 
@@ -166,10 +149,6 @@
   background-color: var(--background-light);
 }
 
-/* .characters-section .heading-secondary {
-  margin-bottom: 9.6rem;
-} */
-
 .characters-section .heading-tertuary {
   margin-bottom: 3.2rem;
 }
@@ -198,16 +177,10 @@
   height: 100vh;
 }
 
-/* .faq-section .heading-secondary {
-  margin-bottom: 4.8rem;
-} */
-
 .accordion {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  /* Not sure about whether I want the gap to be responsive here... */
-  /* gap: 3.2rem; */
 }
 
 .faq-grid {
@@ -294,8 +267,6 @@
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
-
-  /* border: 3px solid red; */
 }
 
 .carousel {
@@ -391,11 +362,9 @@
 .dot.dot-active {
   background-color: #fcc419;
 }
-
 /* ********************************* */
 /* EPISODES - WATCH NOW SECTION */
 /* ********************************* */
-
 .episodes-section {
   margin: 9.8rem 0 12.8rem;
 }
@@ -408,14 +377,10 @@
   padding: 0 3.2rem;
   max-width: 200rem;
   margin: 0 auto;
-
-  /* border: 3px solid red; */
-
   display: grid;
   grid-template-columns: 2.5fr 3.5fr;
   column-gap: 12.8rem;
 }
-
 /* ********************************* */
 /* TABLE COMPONENT */
 /* ********************************* */
@@ -505,7 +470,6 @@ tfoot th {
   border: 3px solid #fff;
   border-radius: var(--radius-main);
   cursor: pointer;
-
   transition: all 350ms;
 }
 
