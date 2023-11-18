@@ -326,7 +326,7 @@
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 500px) {
   .hero-content {
     width: 45rem;
   }
