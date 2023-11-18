@@ -272,7 +272,7 @@
     width: 50rem;
   }
 
-  .heading-primary {
+  .hero-content .heading-primary {
     font-size: 4.4rem;
     margin-bottom: 6.2rem;
   }
@@ -328,11 +328,29 @@
 
 @media (max-width: 500px) {
   .hero-content {
-    width: 45rem;
+    width: 80%;
+  }
+
+  .hero-content .heading-primary {
+    font-size: 4rem;
+    margin-bottom: 6.2rem;
+  }
+
+  .hero-description {
+    max-width: 30rem;
+    font-size: 1.8rem;
+  }
+
+  .--btn-outlined {
+    text-align: center;
   }
 
   .slide {
-    padding: 0 3.2rem;
+    padding: 0 2rem;
+  }
+
+  .author-btn {
+    top: 55%;
   }
 
   .episodes-container {
@@ -355,6 +373,11 @@
 
   .price {
     font-size: 4rem;
+  }
+
+  .basic-light .price {
+    display: inline-block;
+    width: 9.5rem;
   }
 
   .subscribe-text {
