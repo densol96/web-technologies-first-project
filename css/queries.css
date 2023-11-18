@@ -266,10 +266,11 @@
 @media (max-width: 570px) {
   /* HERO */
   .hero-content {
-    top: 4rem;
+    top: 50%;
+    /* top: 4rem;
     transform: translateY(0);
     position: relative;
-    width: 50rem;
+    width: 50rem; */
   }
 
   .hero-content .heading-primary {
@@ -328,17 +329,18 @@
 
 @media (max-width: 500px) {
   .hero-content {
-    width: 80%;
+    width: 90%;
   }
 
   .hero-content .heading-primary {
     font-size: 4rem;
-    margin-bottom: 6.2rem;
+    margin-bottom: 4.8rem;
   }
 
   .hero-description {
     max-width: 30rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 4.8rem;
   }
 
   .--btn-outlined {
