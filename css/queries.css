@@ -325,3 +325,13 @@
     text-align: center;
   }
 }
+
+@media (max-width: 570px) {
+  .hero-content {
+    width: 45rem;
+  }
+
+  .slide {
+    padding: 0 3.2rem;
+  }
+}
