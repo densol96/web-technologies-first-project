@@ -67,12 +67,7 @@
   }
 
   .hero-description {
-    font-size: 2rem;
-  }
-
-  .hero .btn {
-    font-size: 2rem;
-    padding: 0.8rem 1.6rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -244,9 +239,37 @@
   }
 }
 
+@media (max-width: 600px) {
+  .characters-section .grid {
+    grid-template-columns: 1fr;
+    row-gap: 9.6rem;
+  }
+
+  .characters-section .grid figure:first-of-type {
+    grid-row: 1;
+  }
+
+  .characters-section .grid figure:nth-of-type(3) {
+    grid-row: 5;
+  }
+
+  .characters-section .grid figure:last-of-type {
+    grid-row: 9;
+  }
+
+  .characters-section .grid figure {
+    transform: translateY(10%);
+    width: 65%;
+  }
+}
+
 @media (max-width: 570px) {
-  .overflow-border {
-    height: 85rem;
+  /* HERO */
+  .hero-content {
+    top: 4rem;
+    transform: translateY(0);
+    position: relative;
+    width: 50rem;
   }
 
   .heading-primary {
@@ -255,11 +278,50 @@
   }
 
   .hero-description {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .hero .btn {
     font-size: 2rem;
-    padding: 0.8rem 1.6rem;
+    padding: 2rem 2rem;
+  }
+
+  /* CAROUSEL */
+  .overflow-border {
+    height: 85rem;
+  }
+
+  /* CARDS */
+  .episodes-cards {
+    grid-template-columns: 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .episode-card {
+    grid-column: 1 / span 1 !important;
+    width: 70% !important;
+  }
+
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: 1.3fr 1fr;
+    row-gap: 6.4rem;
+    justify-items: center;
+  }
+
+  .logo-col {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .info {
+    grid-row: 2;
+  }
+
+  .footer-grid div {
+    text-align: center;
   }
 }
