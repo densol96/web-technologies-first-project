@@ -134,7 +134,7 @@
 .main-nav.sticky {
   position: fixed;
   top: 0;
-  height: 8rem;
+  height: 70px;
   width: 100%;
   background-color: rgba(51, 155, 240, 0.95);
   z-index: 999;
@@ -366,7 +366,8 @@
 /* EPISODES - WATCH NOW SECTION */
 /* ********************************* */
 .episodes-section {
-  margin: 9.8rem 0 12.8rem;
+  /* margin: 9.8rem 0 12.8rem; */
+  padding: 9.8rem 0 12.8rem;
 }
 
 .episodes-section .container {
@@ -572,10 +573,10 @@ tbody tr:hover {
 
 .episode-facts {
   font-size: 2rem;
-
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  margin-left: 20%;
 }
 
 .episode-info li {

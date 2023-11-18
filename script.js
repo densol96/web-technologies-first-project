@@ -11,7 +11,7 @@ const charactersSection = document.querySelector('.characters-section');
 const navBar = document.querySelector('.main-nav');
 
 const implementSticky = function () {
-  if (window.scrollY >= charactersSection.offsetTop) {
+  if (window.scrollY >= charactersSection.offsetTop - navBar.offsetHeight) {
     navBar.classList.add('sticky');
   } else {
     navBar.classList.remove('sticky');
@@ -116,12 +116,36 @@ watchBtns.forEach((btn) => {
   });
 });
 
-// Little adjusting to size of the primary heading, because after testing on other devices, hero-heading overlaps the logo
-// const heroHeading = document.querySelector('.hero-content .heading-primary');
-// if (window.innerHeight < 800) {
-//   heroHeading.style.fontSize = '6.2rem';
-// }
-// if (window.innerHeight < 600) {
-//   heroHeading.style.fontSize = '5.2rem';
-// }
-// console.log(window.innerHeight);
+// SMOOTH SCROLLING
+const allLinks = document.querySelectorAll('a:link');
+allLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    const href = link.getAttribute('href');
+
+    // Scroll back to top
+    if (href === '#') {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behaviour: 'smooth',
+      });
+    }
+
+    // Inplement navigation
+    if (href !== '#' && href.startsWith(`#`)) {
+      e.preventDefault();
+      const section = document.querySelector(href);
+      // can't use offsetHeight cause height changes as navBar becomes sticky..
+      // so the easy fix for this problem is using a constant height and  keeping it the same acrross different screens..
+      const destY = section.offsetTop - 70;
+      window.scroll({
+        top: destY,
+        behavior: 'smooth',
+      });
+      //   On mobile close the nav menu
+      if (navBar.classList.contains('nav-open')) {
+        navBar.classList.toggle('nav-open');
+      }
+    }
+  });
+});

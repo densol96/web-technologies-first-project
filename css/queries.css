@@ -299,6 +299,10 @@
     width: 70% !important;
   }
 
+  .episode-card::before {
+    top: 5%;
+    right: -20%;
+  }
   /* FOOTER */
   .footer-grid {
     grid-template-columns: 1.3fr 1fr;
